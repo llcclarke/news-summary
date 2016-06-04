@@ -9,10 +9,11 @@ describe("app", function() {
     expect($$("h1").first().getText()).toEqual("Headlines for Head Honchos")
   });
 
-  it('should have a headline', function(){
+  it('should have several headlines', function(){
     browser.get('/');
-    var headline = $('#headline');
-    expect(headline.getText()).toEqual("Headline 1");
+    var headlines = $$("#news");
+    expect(headlines.first().getText()).toMatch("Headline 1");
+    expect(headlines.last().getText()).toMatch("Headline 2");
   });
 });
 

@@ -1,9 +1,11 @@
 angular.module("newsSummaryApp")
-  .controller("NewsSummaryController", [function() {
+  .controller("NewsSummaryController", ['NewsSummaryFactory', function(NewsSummaryFactory) {
     var self = this;
 
     self.pageHeading = "Headlines for Head Honchos";
 
-    self.headline = "Headline 1";
+    self.news = [new NewsSummaryFactory("Headline 1"), new NewsSummaryFactory("Headline 2")];
 
   }]);
+
+
