@@ -7,7 +7,11 @@ describe("NewsSummaryController", function() {
     controller = $controller("NewsSummaryController");
   }));
 
-  it("makes exposes a greeting of 'Hello, world'", function() {
-    expect(controller.greeting).toEqual("Hello, world");
+  it("has a heading", function() {
+    expect(controller.pageHeading).toEqual("Headlines for Head Honchos");
   });
+
+  it("has a news headline", function(){
+    expect(controller.headline).toEqual("More bad news is bad news");
+  })
 });

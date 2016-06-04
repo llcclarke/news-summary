@@ -2,5 +2,8 @@ angular.module("newsSummaryApp")
   .controller("NewsSummaryController", [function() {
     var self = this;
 
-    self.greeting = "Hello, world";
+    self.pageHeading = "Headlines for Head Honchos";
+
+    self.headline = "More bad news is bad news";
+
   }]);
