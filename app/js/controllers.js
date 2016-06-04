@@ -4,6 +4,6 @@ angular.module("newsSummaryApp")
 
     self.pageHeading = "Headlines for Head Honchos";
 
-    self.headline = "More bad news is bad news";
+    self.headline = "Headline 1";
 
   }]);

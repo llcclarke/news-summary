@@ -12,6 +12,7 @@ describe("NewsSummaryController", function() {
   });
 
   it("has a news headline", function(){
-    expect(controller.headline).toEqual("More bad news is bad news");
+    expect(controller.headline).toEqual("Headline 1");
   })
 });
+
